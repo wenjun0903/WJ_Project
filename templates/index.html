@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+            <style>
+
+                html, body{
+                        height: 100vh;
+                        background: linear-gradient(to bottom, #c4e0e5, #4ca1af);
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                          }            
+                        h1{
+                          text-align : center;
+                          padding:10px;
+                          }
+                          
+                        .upload{
+                          text-align : center;
+                          border: 2px solid;
+                          border-radius: 5px;
+                          align-items:  center; 
+                          padding:30px 0 80px 0;
+                          margin : 0 250px 0 250px;
+                         
+                          }
+
+                        p span {
+                          display: block;
+                          font-size: 18px;
+                          font-family: Arial, Helvetica, sans-serif;                          }
+
+                        .file{
+                          margin-left: 90px;
+                          }
+
+                        .button{
+                          margin-right :70px;
+                          }
+
+
+            </style>
+
+
+            <head>
+              <meta charset="utf-8" />
+              <title>{{ title }}</title>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+            </head>
+            
+        
+            <body>
+                <h1>Time Series Sales Forecasting</h1>
+                    </br>
+                        </br>
+                          </br>
+                             </br> 
+                            <div class = "upload">
+                                <p> <span>Welcome to Time Series Sales Forecasting webpage system.</span>
+                                <span>For further info, this system will basically predict the future sales for next coming 6 months, 1 year and 2 years. </span>
+                                <span>Users are require to upload a CSV file that contain "month" and "sales value" for prediction.</span>
+                                <span>Please upload your CSV file for predicting :</span></p>
+                                </br>
+                                
+                                <form action="/transform" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="data_file" class="file"/>
+                                    </br>
+                                    </br>
+                                    <span class="input-group-addon">Please Select Future Month</span>
+                                        <select name="comp_select" class="selectpicker form-control">
+                                            {% for o in data %}
+                                            <option value="{{ o  }}">{{ o }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    <br>  
+                                    <br>     
+                                    <button type="submit" class="button">Predict</button>        
+                                </form>
+                            </div>
+                                 
+             </body>
+        </html>
