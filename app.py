@@ -6,7 +6,6 @@ from io import StringIO
 import csv
 import pandas as pd
 import numpy as np
-import pickle
 import os
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
