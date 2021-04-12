@@ -1,0 +1,23 @@
+Flask==1.1.2
+gunicorn==20.1.0
+itsdangerous==1.1.0
+Jinja2==2.11.1
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
+h5 == 0.0.1
+h5py == 2.10.0
+numpy==1.18.4
+scipy==1.4.1
+scikit-learn==0.22.2.post1
+sklearn==0.0
+matplotlib==3.2.1
+tensorflow==2.2.0
+keras==2.4.3
+keras-Applications==1.0.8
+keras-Preprocessig==1.1.0
+pandas==1.0.3
+pickleshare==0.7.5
+decorator==4.4.2
+python-csv==0.0.13
+python-dateutil==2.8.1
+grpcio==1.28.1
