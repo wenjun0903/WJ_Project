@@ -15,4 +15,5 @@ python-dateutil==2.8.1
 DateTime==4.3
 python-csv==0.0.13
 python-dateutil==2.8.1
+tensorflow==2.4.1
 
