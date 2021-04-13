@@ -17,4 +17,5 @@ python-csv==0.0.13
 python-dateutil==2.8.1
 tensorflow-cpu==2.2.0
 django==3.2
+PyJWT==1.7.1
 
