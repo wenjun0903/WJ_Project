@@ -107,15 +107,19 @@ def transform_view():
         line_values=values
         return render_template('graph.html', title='Time Series Sales forecasting', max= (max(values)+ max(values)), labels=line_labels, values=line_values)
     
-        ##df_predict = pd.DataFrame(transform, columns=["predicted value"])
-        ##response = make_response(new_data.to_csv(index = True, encoding='utf8'))
-        ##response.headers["Content-Disposition"] = "attachment; filename=result.csv"
-        ##return response
+
 
 @app.route('/download')
 def download():
     path = "downloads/result.csv"
+    return send_file(path , as_attachment = True)   
+
+@app.route('/format')
+def format():
+    path = "format/format.csv"
     return send_file(path , as_attachment = True)     
+
+
 
 
 
