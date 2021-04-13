@@ -93,7 +93,7 @@ def transform_view():
             
         #make dataframe and store to a new CSV file
         new_data = pd.DataFrame(dicts).set_index("Month")
-        new_data.to_csv(os.path.join("downloads","result.csv"), index = True, encoding='utf-8')
+        new_data.to_csv(os.path.join("downloads","result.csv"), index = True)
 
        
         #label X and Y value
