@@ -44,7 +44,7 @@ def transform_view():
             return redirect(url_for("form")) 
 
         #read file data
-        stream = io.StringIO(f.stream.read().decode(), newline=None)
+        stream = io.TextIOWrapper(f.stream._file, "UTF8", newline=None)
         csv_input = csv.reader(stream)
         stream.seek(0)
         result = stream.read()
