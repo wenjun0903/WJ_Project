@@ -55,6 +55,14 @@
               <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
             </head>
             
+            {% block body %}
+
+            <p>{{ error }}</p>
+            <p>{{ e }}</p>
+            <p>{{ nofile }}</p>
+
+            {% endblock %}
+            
         
             <body>
                 <h1>Time Series Sales Forecasting</h1>
